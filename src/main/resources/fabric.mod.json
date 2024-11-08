@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "azur",
+	"version": "${version}",
+	"name": "Azur",
+	"description": "This mod adds randoms new items, additions and mechanics I think are cool ! by Low_Possum",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/azur/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.possum.azur.Azur"
+		],
+		"fabric-datagen": [
+			"net.possum.azur.AzurDataGenerator"
+		],
+		"client": [
+			"net.possum.azur.AzurClient"
+		]
+	},
+	"mixins": [
+		"azur.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
